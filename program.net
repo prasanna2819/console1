@@ -1,0 +1,24 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("please enter your name");
+            string name = Console.ReadLine();
+            Console.WriteLine("how mush sleep did you have last night:");
+            int hoursOfSleep = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("hello" + name);
+            if(hoursOfSleep<8)
+            {
+                Console.WriteLine("you must feeling tired");
+            }
+            else
+            {
+                Console.WriteLine("you seem well rested");
+            }
+        }
+    }
+}
